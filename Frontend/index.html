@@ -86,18 +86,23 @@
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgba(99, 102, 241, 0.4);
+      background: transparent;
       border-radius: 10px;
+    }
+
+    .kanban-col:hover::-webkit-scrollbar-thumb {
+      background: rgba(99, 102, 241, 0.4);
     }
 
     /* Column scroll */
     .kanban-col {
-      max-height: calc(100vh - 300px);
+      max-height: calc(100vh - 260px);
       overflow-y: auto;
       padding-top: 8px;
+      padding-bottom: 12px;
       padding-inline: 4px;
       margin-inline: -4px;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
 
     /* Base card transition */
@@ -620,8 +625,8 @@
   <!-- ═══════════════════════════════════════════════════ -->
   <!-- FOOTER                                              -->
   <!-- ═══════════════════════════════════════════════════ -->
-  <footer class="text-center py-8 text-white/20 text-xs">
-    Designed by: Vidath Harshitha . All Rights Reserved
+  <footer class="text-center py-4 text-white/30 text-xs tracking-wide">
+    Designed by Vidath Harshitha &bull; All Rights Reserved
   </footer>
 
   <!-- ═══════════════════════════════════════════════════ -->
